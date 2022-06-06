@@ -12,4 +12,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onFullScreen(){
+    //Event to select full screen
+  }
+
+  onSave(){
+    alert("Sorry - Coming Soon!");
+  }
 }
