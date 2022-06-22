@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OnsApiCall } from '../shared/ONSAPICall.service';
 
 @Component({
   selector: 'app-data-select',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataSelectComponent implements OnInit {
 
-  constructor() { }
+  constructor(private onsApiService: OnsApiCall) { }
 
   ngOnInit(): void {
+    this.onsApiService.fetchDataSets();
   }
 
 }

@@ -7,23 +7,43 @@
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 		<ul class="navbar-nav">
-		  <li class="nav-item">
-			  <a class="nav-link active" aria-current="page" href="#">Home</a>
-		  </li>
-		  <li class="nav-item dropdown">
+		  <li 
+		  	class="nav-item"
+		  	role="presentation"
+			routerLinkActive="active"
+			[routerLinkActiveOptions]="{exact: true}">
 			  <a 
-          class="nav-link dropdown-toggle" 
-          href="#" id="navbarDropdownMenuLink" 
-          role="button" 
-          data-bs-toggle="dropdown" 
-          aria-expanded="false">
-			  Chart
-			</a>
+			  	class="nav-link active" 
+				aria-current="page" 
+				routerLink="/datasets">Data Set</a>
+		  </li>
+		  <li 
+		  	class="nav-item"
+		  	role="presentation"
+			routerLinkActive="active">
+			  <a 
+			  	class="nav-link active" 
+				aria-current="page" 
+				routerLink="/chart">View Data</a>
+		  </li>
+		  
+		  <!-- <li 
+		  	class="nav-item dropdown"
+			role="presentation"
+			routerLinkActive="active">
+			  <a 
+				class="nav-link dropdown-toggle" 
+				href="#" 
+				id="navbarDropdownMenuLink" 
+				role="button" 
+				data-bs-toggle="dropdown" 
+				aria-expanded="false"
+				routerLink="/chart">Chart</a>
 			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			  <li><a class="dropdown-item" href="#" (click)="onFullScreen()">Full Screen</a></li>
 			  <li><a class="dropdown-item" href="#" (click)="onSave()">Save</a></li>
 			</ul>
-		  </li>
+		  </li> -->
 		</ul>
 	  </div>
 	</div>
