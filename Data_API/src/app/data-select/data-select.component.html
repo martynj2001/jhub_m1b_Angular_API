@@ -1,7 +1,12 @@
 <div class="card bg-light">     
     <div class="card-body">
         <div class="card-title fs-3">Select API Data to View</div>
-        <div class="form-check">
+        <hr>
+        <app-data-select-item
+            *ngFor="let dataset of datasets; let i = index"
+            [dataset]="dataset"
+            [index]="i"></app-data-select-item>
+        <!-- <div class="form-check">
             <input 
                 class="form-check-input" 
                 type="radio" 
@@ -33,7 +38,8 @@
             <label class="form-check-label" for="dataset3">
                 Data Set 3
             </label>
-        </div>
+        </div> -->
+        
         <button class="btn btn-success m-3" type="submit">Submit Request</button>
         <button class="btn btn-danger m-3">Clear Data Set</button>
             

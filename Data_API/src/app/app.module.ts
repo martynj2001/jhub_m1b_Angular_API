@@ -10,6 +10,7 @@ import { ChartComponent } from './chart/chart.component';
 import { DataSelectStartComponent } from './data-select/data-select-start/data-select-start.component';
 import { DataRawComponent } from './chart/data-raw/data-raw.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { DataSelectItemComponent } from './data-select/data-select-item/data-select-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     DataSelectComponent,
     ChartComponent,
     DataSelectStartComponent,
-    DataRawComponent
+    DataRawComponent,
+    DataSelectItemComponent
   ],
   imports: [
     BrowserModule,

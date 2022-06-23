@@ -1,0 +1,12 @@
+<a
+    style="cursor: pointer;"
+    class="list-group-item clearfix"
+    (click)="onDataSetSelected()">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ dataset.id }}</h4>
+        <p class="list-group-item-text">{{dataset.description}}</p>
+    </div>
+    <div class="pull-right">
+        <p>[<span *ngFor="let keyword of dataset.keywords; let i = index"> {{keyword}} </span>]</p>
+    </div>
+</a>

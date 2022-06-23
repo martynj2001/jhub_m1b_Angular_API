@@ -5,9 +5,9 @@ export class DataSet {
     public id: string;
     public url: string;
 
-    constructor( description: string, keywords: string[], id: string, url: string){
-      this.description = description;
-      this.keywords = keywords;
+    constructor( desc: string, keys: string[], id: string, url: string){
+      this.description = desc;
+      this.keywords = keys;
       this.id = id;
       this.url = url;
     }
